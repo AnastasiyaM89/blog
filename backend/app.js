@@ -7,7 +7,7 @@ const routes = require("./routes");
 
 const port = 3001;
 const app = express();
-
+console.log("DB_CONNECTION_STRING:", process.env.DB_CONNECTION_STRING);
 app.use(express.static("../frontend/build"));
 
 app.use(cookieParser());
